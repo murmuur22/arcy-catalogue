@@ -12,9 +12,10 @@
 
 
 {#if !isReady}
-    <div class="w-full h-full flex items-center justify-center">
+    <div class="w-full h-screen flex items-center justify-center">
         <Stretch size="60" unit="px" duration="1s" color="#545454" />
     </div>
+{:else}
+    <slot />
 {/if}
 
-<slot />
